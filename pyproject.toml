@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nba-headshot-downloader"
+version = "1.0.0"
+authors = [
+    {name = "Troy Mireku", email = "xapd421@gmail.com"},
+]
+description = "A package to download headshots of nba players"
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["nba", "headshot"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests>=2.20.0",
+]
+license = { file = "LICENSE" }
+
+[project.urls]
+Homepage = "https://github.com/xapd421/nba-headshot-downloader"
+Issues = "https://github.com/xapd421/nba-headshot-downloader/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
